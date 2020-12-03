@@ -1,2 +1,5 @@
-build/ 
+Logs/
+Temp/
+build/
+obj/ 
 .vs/

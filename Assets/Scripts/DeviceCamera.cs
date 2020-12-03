@@ -67,14 +67,15 @@ public class DeviceCamera : MonoBehaviour
     {
         if (!camAvailable)
 			return;
-		/*
+		
+        /*
         // Update orientation of the camera
 		float ratio = (float)cameraTexture.width / (float)cameraTexture.height;
 		fitter.aspectRatio = ratio;
 		
         // Check if camera is mirrored. If yes, swap it
-		float scaleY = cameraTexture.videoVerticallyMirrored ? -0.5f: 0.5f;
-		cameraDisplay.rectTransform.localScale = new Vector3(0.5f, scaleY, 1f);
+		float scaleY = cameraTexture.videoVerticallyMirrored ? -1f: 1f;
+		cameraDisplay.rectTransform.localScale = new Vector3(1f, scaleY, 1f);
 		
 		int orient = -cameraTexture.videoRotationAngle;
 		cameraDisplay.rectTransform.localEulerAngles = new Vector3(0, 0, orient);

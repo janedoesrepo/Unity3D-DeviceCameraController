@@ -13,11 +13,17 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.AspectRatioFitter
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
   sceneClasses:
-    Assets/Scenes/MyScene.unity:
+    Assets/Scenes/CameraScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -37,21 +43,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11248}
+      Script: {instanceID: 11250}
     - Class: 114
-      Script: {instanceID: 11406}
+      Script: {instanceID: 11408}
     - Class: 114
-      Script: {instanceID: 11618}
+      Script: {instanceID: 11410}
     - Class: 114
-      Script: {instanceID: 11832}
+      Script: {instanceID: 11448}
     - Class: 114
-      Script: {instanceID: 12238}
+      Script: {instanceID: 11620}
     - Class: 114
-      Script: {instanceID: 12650}
+      Script: {instanceID: 11746}
     - Class: 114
-      Script: {instanceID: 12696}
+      Script: {instanceID: 11834}
     - Class: 114
-      Script: {instanceID: 13046}
+      Script: {instanceID: 12026}
+    - Class: 114
+      Script: {instanceID: 12240}
+    - Class: 114
+      Script: {instanceID: 12652}
+    - Class: 114
+      Script: {instanceID: 12698}
+    - Class: 114
+      Script: {instanceID: 13036}
+    - Class: 114
+      Script: {instanceID: 13048}
+    - Class: 114
+      Script: {instanceID: 13062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -59,6 +77,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -363,7 +383,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 79ed7037e08a371ca5922055d34bc305
+      Hash: 38037680c7eb25a9432728d3e0d12fe9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DeviceCamera
@@ -493,13 +513,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 388b904e9143457736f520902e23e0b2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ChangeText
   platform: 21
   scenePathNames:
-  - Assets/Scenes/MyScene.unity
+  - Assets/Scenes/CameraScene.unity
   playerPath: C:/Users/jaengel/Unity/DeviceCamera/build
