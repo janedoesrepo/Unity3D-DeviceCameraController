@@ -1,4 +1,9 @@
-﻿// ref for camera access: https://www.youtube.com/watch?v=c6NXkZWXHnc
+﻿/*
+ * References:
+ *  - camera: https://www.youtube.com/watch?v=c6NXkZWXHnc
+ *  - dropdown: https://www.youtube.com/watch?v=Q4NYCSIOamY
+ */
+
 
 using System.Collections;
 using System.Collections.Generic;
