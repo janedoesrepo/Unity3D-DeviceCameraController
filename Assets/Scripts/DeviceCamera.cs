@@ -5,29 +5,29 @@
  */
 
 
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DeviceCamera : MonoBehaviour
 {
-	// Camera display
-	private bool camAvailable;
+    public RawImage cameraDisplay;
+    public AspectRatioFitter fitter;
+    public TMP_Dropdown devicesDropdown;
+
+    // Camera
+    private bool camAvailable;
 	private WebCamTexture cameraTexture;
     private WebCamDevice[] devices;
 
     // Background and Display
     private Texture defaultBackground;
-	public RawImage cameraDisplay;
-	public AspectRatioFitter fitter;
 
-    // Dropdown to choose camera
-    public Dropdown devicesDropdown;
+    // Dropdown to choose between cameras
     List<string> deviceOptions = new List<string> { "None" };
 
 	
-    // Start is called before the first frame update
     private void Start()
     {
         // Set default background to whatever is at the scene
@@ -62,14 +62,12 @@ public class DeviceCamera : MonoBehaviour
     }
 
 
-    // Update is called once per frame
     private void Update()
     {
         if (!camAvailable)
 			return;
 		
-        /*
-        // Update orientation of the camera
+                // Update orientation of the camera
 		float ratio = (float)cameraTexture.width / (float)cameraTexture.height;
 		fitter.aspectRatio = ratio;
 		
@@ -79,8 +77,8 @@ public class DeviceCamera : MonoBehaviour
 		
 		int orient = -cameraTexture.videoRotationAngle;
 		cameraDisplay.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
-		*/
     }
+
 
     public void Dropdown_IndexChanged(int index)
     {
