@@ -3,7 +3,4 @@ App/
 Library/
 Logs/
 obj/
-Packages/
 Temp/
-*.csproj
-*.sln

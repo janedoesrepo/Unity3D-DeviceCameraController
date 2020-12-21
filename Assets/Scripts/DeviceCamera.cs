@@ -8,23 +8,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class DeviceCamera : MonoBehaviour
 {
-    public RawImage cameraDisplay;
-    public AspectRatioFitter fitter;
-    public TMP_Dropdown devicesDropdown;
-
     // Camera
     private bool camAvailable;
 	private WebCamTexture cameraTexture;
     private WebCamDevice[] devices;
 
     // Background and Display
+    public RawImage cameraDisplay;
+    public AspectRatioFitter fitter;
     private Texture defaultBackground;
 
     // Dropdown to choose between cameras
+    public Dropdown devicesDropdown;
     List<string> deviceOptions = new List<string> { "None" };
 
 	
@@ -67,7 +65,7 @@ public class DeviceCamera : MonoBehaviour
         if (!camAvailable)
 			return;
 		
-                // Update orientation of the camera
+        // Update orientation of the camera
 		float ratio = (float)cameraTexture.width / (float)cameraTexture.height;
 		fitter.aspectRatio = ratio;
 		
