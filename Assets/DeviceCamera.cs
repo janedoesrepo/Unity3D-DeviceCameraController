@@ -84,7 +84,7 @@ public class DeviceCamera : MonoBehaviour
 
         if (index != 0)
         {
-            // index has 1 more option than we have devicess
+            // index has 1 more option (None) than we have devices
             var selectedDevice = devices[index - 1];
             cameraTexture = new WebCamTexture(selectedDevice.name, Screen.width, Screen.height);
             cameraTexture.Play();
