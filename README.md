@@ -1,4 +1,4 @@
-# Unity3D-DeviceCameraController
+# Unity3D Device Camera Controller
 Simple example for accessing and rendering camera devices in Unity3D
 
 ## Usage
